@@ -1,16 +1,12 @@
-from tianshou.env.utils import CloudpickleWrapper
-from tianshou.env.common import EnvWrapper, FrameStack
-from tianshou.env.vecenv import BaseVectorEnv, VectorEnv, \
-    SubprocVectorEnv, RayVectorEnv
-from tianshou.env import mujoco
+from tianshou.env.venvs import BaseVectorEnv, DummyVectorEnv, \
+    SubprocVectorEnv, ShmemVectorEnv, RayVectorEnv
+from tianshou.env.maenv import MultiAgentEnv
 
 __all__ = [
-    'mujoco',
-    'EnvWrapper',
-    'FrameStack',
-    'BaseVectorEnv',
-    'VectorEnv',
-    'SubprocVectorEnv',
-    'RayVectorEnv',
-    'CloudpickleWrapper',
+    "BaseVectorEnv",
+    "DummyVectorEnv",
+    "SubprocVectorEnv",
+    "ShmemVectorEnv",
+    "RayVectorEnv",
+    "MultiAgentEnv",
 ]
